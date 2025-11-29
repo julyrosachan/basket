@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <title>iStore.com</title>
+  <link rel="icon" type="image/png" href="./logo-apple-2048.png">
+</head>
+<body>
+
+<div class="container">
+  <!-- Sol: Kateqoriyalar -->
+  <div class="sidebar">
+    <h3>Categories</h3>
+    <ul class="category-list">
+      <li data-category="noutbuklar" class="active">Mac</li>
+      <li data-category="plansetler">iPad</li>
+      <li data-category="telefonlar">iPhone</li>
+    </ul>
+  </div>
+
+  <!-- Orta: Məhsullar -->
+  <div class="content">
+    <div id="products-container" class="products-grid"></div>
+  </div>
+
+  <!-- Sağ: Səbət -->
+  <div class="cart">
+    <h3>Cart</h3>
+    <div id="cart-items" class="cart-items"></div>
+    <div id="cart-total" class="cart-total">Total: 0 ₼</div>
+    <button id="clear-cart" class="clear-cart">Delete All</button>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
